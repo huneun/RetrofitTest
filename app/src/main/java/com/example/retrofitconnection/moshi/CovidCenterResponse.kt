@@ -1,11 +1,13 @@
-package com.example.retrofitconnection
+package com.example.retrofitconnection.moshi
 
 
 import com.squareup.moshi.Json
+import com.squareup.moshi.JsonClass
 
+@JsonClass(generateAdapter = true)
 data class CovidCenterResponse(
     @field:Json(name = "CORSVST")
-    val cORSVST: CORSVST?
+    val cORSVST: List<CORSVST>
 )
 
 data class CORSVST(

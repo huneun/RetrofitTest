@@ -1,4 +1,4 @@
-package com.example.retrofitconnection
+package com.example.retrofitconnection.moshi
 
 
 import okhttp3.OkHttpClient

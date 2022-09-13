@@ -1,4 +1,4 @@
-package com.example.retrofitconnection
+package com.example.retrofitconnection.moshi
 
 import retrofit2.Call
 import retrofit2.Response
@@ -11,7 +11,7 @@ interface EmgMedService {
                       @Query("Type") Type : String):Call<CovidCenterResponse>
 
     @GET("CORSVST")
-    suspend fun getDataCoroutine(
+    fun getDataCoroutine(
         @Query("KEY") KEY : String,
         @Query("Type") Type : String
     ): Response<CovidCenterResponse>
